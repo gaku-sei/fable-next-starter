@@ -1,0 +1,21 @@
+{
+  "name": "next-fable-starter",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Kevin COMBRIAT <kevin@sc0ville.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap:css": "curl -s https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css > public/tailwind.min.css",
+    "bootstrap": "yarn bootstrap:css",
+    "clean": "dotnet fable clean && rm -fr .next",
+    "dev": "dotnet fable watch src/App --run next dev",
+    "build": "dotnet fable src/App && next build",
+    "start": "next start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "next": "^9.5.5",
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
+  }
+}

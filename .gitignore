@@ -1,0 +1,12 @@
+*.fs.js
+.ionide
+.vscode
+.fable
+.next
+.fake
+.cache
+bin
+obj
+node_modules
+dist
+public/tailwind.min.css
