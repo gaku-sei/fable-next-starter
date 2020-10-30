@@ -2,7 +2,6 @@ module App
 
 open Browser
 open Elmish
-open Fable.Core.JsInterop
 open Feliz
 open Feliz.UseElmish
 
@@ -48,7 +47,5 @@ let counter (initialCount: int) =
                    {| label = "-"
                       onClick = fun _ -> dispatch Decrement |} ]
 
-[<ReactComponent>]
+[<ReactComponent(exportDefault = true)>]
 let app () = counter 42
-
-exportDefault app
