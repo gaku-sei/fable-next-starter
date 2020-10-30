@@ -9,4 +9,6 @@ bin
 obj
 node_modules
 dist
+
 public/tailwind.min.css
+src/Api
