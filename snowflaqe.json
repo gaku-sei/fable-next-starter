@@ -1,0 +1,6 @@
+{
+  "schema": "https://countries.trevorblades.com/",
+  "queries": "./src/graphql",
+  "project": "Api",
+  "output": "./src/Api"
+}

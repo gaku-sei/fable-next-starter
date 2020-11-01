@@ -1,0 +1,11 @@
+query Continents {
+  continents {
+    name
+    countries {
+      name
+      languages {
+        name
+      }
+    }
+  }
+}

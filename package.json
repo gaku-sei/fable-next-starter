@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "bootstrap:css": "curl -s https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css > public/tailwind.min.css",
-    "bootstrap": "yarn bootstrap:css",
+    "graphql:validate": "dotnet snowflaqe",
+    "graphql:generate": "dotnet snowflaqe --generate",
+    "bootstrap": "yarn bootstrap:css && yarn graphql:generate",
     "clean": "dotnet fable clean && rm -fr .next",
     "dev": "dotnet fable watch src/App --run next dev",
     "build": "dotnet fable src/App && next build",

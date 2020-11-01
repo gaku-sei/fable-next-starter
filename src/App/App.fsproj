@@ -11,4 +11,7 @@
     <PackageReference Include="Feliz.UseElmish" Version="1.4.1" />
     <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.4.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Api\Api.fsproj" />
+  </ItemGroup>
 </Project>
