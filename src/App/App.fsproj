@@ -3,15 +3,18 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Api\Api.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Tw.fs" />
+    <Compile Include="ApiClient.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0.0" />
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
     <PackageReference Include="Feliz" Version="1.16.1" />
     <PackageReference Include="Feliz.UseElmish" Version="1.4.1" />
     <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.4.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Api\Api.fsproj" />
   </ItemGroup>
 </Project>

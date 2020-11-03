@@ -1,7 +1,5 @@
-[<AutoOpen>]
-module Tw
+namespace App
 
 open Zanaptak.TypedCssClasses
 
-[<AutoOpen>]
-type Tw = CssClasses<source="../../public/tailwind.min.css", naming=Naming.CamelCase>
+type Tw = CssClasses<source="../../public/tailwind.min.css">
